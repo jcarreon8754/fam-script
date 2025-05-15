@@ -16,22 +16,24 @@ if name:
     elif wife in name:
         st.write("Hello bb cheeks")
         kisses = st.radio('Have you given besitos?', ['of course', 'no...'], key='kisses')
-        if kisses == 'of course':
-            st.write('Love you bb')
-        else:
-            st.write('Look at camera and give me besitos')
-        st.write('Thanks for your besitos')
-
-        love = st.radio('Do you still love me?', ['i guess so', 'nahh'], key='love')
-        if love == 'i guess so':
-            much = st.number_input('How much? (enter number)', min_value=0, key='much')
-            if much >= 99:
-                st.write('Yayyy you love me mucho. I also love you mucho')
+        if kisses:
+            if kisses == 'of course':
+                st.write('Love you bb')
             else:
-                st.write("You don't love me mucho")
-        else:
-            st.write('Oh, ok...')
-            st.write('That hurts')
+                st.write('Look at camera and give me besitos')
+            st.write('Thanks for your besitos')
+
+            love = st.radio('Do you still love me?', ['i guess so', 'nahh'], key='love')
+            if love == 'i guess so':
+                much = st.number_input('How much? (enter number)', min_value=0, key='much')
+                if much >= 99:
+                    st.write('Yayyy you love me mucho. I also love you mucho')
+                else:
+                    st.write("You don't love me mucho")
+            else:
+                st.write('Oh, ok...')
+                st.write('That hurts')
+
 
     elif 'jose' in name or 'rocio' in name:
         st.write('Hello parent')
