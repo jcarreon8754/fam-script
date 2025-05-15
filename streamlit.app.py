@@ -15,7 +15,7 @@ if name:
 
     elif wife in name:
         st.write("Hello bb cheeks")
-        kisses = st.radio('Have you given besitos?', ['of course', 'no...'], key='kisses')
+        kisses = st.radio('Have you given besitos?', ['of course', 'no...'], index=None, key='kisses')
         if kisses:
             if kisses == 'of course':
                 st.write('Love you bb')
@@ -23,7 +23,7 @@ if name:
                 st.write('Look at camera and give me besitos')
             st.write('Thanks for your besitos')
 
-            love = st.radio('Do you still love me?', ['i guess so', 'nahh'], key='love')
+            love = st.radio('Do you still love me?', ['i guess so', 'nahh'], index=None, key='love')
             if love == 'i guess so':
                 much = st.number_input('How much? (enter number)', min_value=0, key='much')
                 if much >= 99:
