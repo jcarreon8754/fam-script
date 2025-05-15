@@ -20,10 +20,10 @@ if name:
             if kisses == 'of course':
                 st.write('Love you bb')
             else:
-                st.write('Look at camera and give me besitos')
+                st.write('Come to me and give me besitos')
             st.write('Thanks for your besitos')
 
-            love = st.radio("---select an option---", 'Do you still love me?', ['i guess so', 'nahh'], index=None, key='love')
+            love = st.radio('Do you still love me?', ["---select an option---", 'i guess so', 'nahh'], index=None, key='love')
             if love == 'i guess so':
                 much = st.number_input('How much? (enter number)', min_value=0, key='much')
                 if much >= 99:
