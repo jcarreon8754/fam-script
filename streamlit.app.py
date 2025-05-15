@@ -15,7 +15,7 @@ if name:
 
     elif wife in name:
         st.write("Hello bb cheeks")
-        kisses = st.radio('Have you given besitos?', ['of course', 'no...'], index=None, key='kisses')
+        kisses = st.radio('Have you given besitos?', ["---select an option---", 'of course', 'no...'], index=None, key='kisses')
         if kisses:
             if kisses == 'of course':
                 st.write('Love you bb')
@@ -23,7 +23,7 @@ if name:
                 st.write('Look at camera and give me besitos')
             st.write('Thanks for your besitos')
 
-            love = st.radio('Do you still love me?', ['i guess so', 'nahh'], index=None, key='love')
+            love = st.radio("---select an option---", 'Do you still love me?', ['i guess so', 'nahh'], index=None, key='love')
             if love == 'i guess so':
                 much = st.number_input('How much? (enter number)', min_value=0, key='much')
                 if much >= 99:
@@ -37,13 +37,13 @@ if name:
 
     elif 'jose' in name or 'rocio' in name:
         st.write('Hello parent')
-        food = st.radio('Did you eat soup today?', ['claro', 'hell no'], key='food')
+        food = st.radio('Did you eat soup today?', ['claro', 'hell no'], index=None, key='food')
         if food == 'claro':
             st.write('Gross')
         else:
             st.write('Good!')
 
-        work = st.radio('Are you working?', ['yes', 'no'], key='work')
+        work = st.radio('Are you working?', ['yes', 'no'], index=None, key='work')
         if work == 'yes':
             st.write('Okie, keep at it! Love you always')
         else:
@@ -51,7 +51,7 @@ if name:
 
     elif 'sofia' in name:
         st.write('Hello seester')
-        bf = st.radio('Is Cole still there?', ['yes', 'no'], key='bf')
+        bf = st.radio('Is Cole still there?', ['yes', 'no'], index=None, key='bf')
         if bf == 'yes':
             st.write('Booo make him leave')
         else:
@@ -65,7 +65,7 @@ if name:
 
     elif any(n in name for n in ['natalie', 'natty', 'nanga']):
         st.write('Hello nangana')
-        sleep = st.radio('Have you woken up yet?', ['yes', 'no'], key='sleep')
+        sleep = st.radio('Have you woken up yet?', ['yes', 'no'], index=None, key='sleep')
         if sleep == 'yes':
             st.write('Finally')
             studying = st.number_input('How many hours have you studied for STEP today?', min_value=0, key='studying')
