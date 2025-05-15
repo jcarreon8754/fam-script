@@ -37,7 +37,7 @@ if name:
 
     elif 'jose' in name or 'rocio' in name:
         st.write('Hello parent')
-        food = st.radio('Did you eat soup today?', ['claro', 'hell no'], index=None, key='food')
+        food = st.radio('Did you eat soup today?', ["---select an option---", 'claro', 'hell no'], index=None, key='food')
         if food == 'claro':
             st.write('Gross')
         else:
